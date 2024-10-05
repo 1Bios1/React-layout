@@ -6,6 +6,26 @@
 
 #root {
 
+  margin: 0 10vmax;
+
+  @media (width <= 1000px) {
+    margin: 0 7vmax;
+  }
+
+  @media (width <= 700px) {
+    margin: 0;
+  }
+
+  display: grid;
+  
+  grid-template-areas: 
+    'siteMenu siteMenu';
+
+  grid-template-rows: 100dvh;
+  
+
+  min-height: 100vh;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -13,5 +33,7 @@
 }
 
 .menu {
-  
+  grid-area: siteMenu;
+  background-color: black;
+
 }
