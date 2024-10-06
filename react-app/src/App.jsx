@@ -5,9 +5,7 @@ function App() {
 
   return (
     <>
-      <header className="menu">
-          <Menu />
-      </header>
+      
     </>
   )
 
