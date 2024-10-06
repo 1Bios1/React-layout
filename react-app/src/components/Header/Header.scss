@@ -1,0 +1,120 @@
+
+.nav-row {
+
+    &__number {
+
+        @media (width <= 700px) {
+            display: none;
+        }
+
+    }
+
+    &__btn {
+
+        @media (width <= 700px) {
+            display: none;
+        }
+
+    }
+
+    &__burger-btn {
+
+        border: 2px solid white;
+        border-radius: 12px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+        gap: 0.5vmax;
+
+        @media (width > 700px) {
+            display: none;
+        }
+
+        .line {
+            transition: all .3s;
+            width: 20px;
+            height: 2px;
+            background-color: white;
+
+        }
+
+    }
+
+    .clicked {
+
+        .line_1 {
+            transform: rotateZ(-50deg) translateY(2px) translateX(-3.9px);
+        }
+
+        .line_2 {
+            transform: rotateZ(50deg);
+        }
+
+        .line_3 {
+            width: 0;
+        }
+    }
+
+    &__number-icon-btn {
+        border: 2px solid white;
+        border-radius: 12px;
+
+        @media (width > 700px) {
+            display: none;
+        }
+    }
+
+}
+
+.content {
+
+    justify-content: center;
+    align-items: center;
+
+    background: url('./student.svg') bottom right / 75lvh auto no-repeat;
+
+    @media (width <= 1400px) {
+        background: url('./student.svg') bottom right / 70lvh 70lvh no-repeat;
+    }
+
+    @media (width <= 1000px) {
+        background: url('./student.svg') top center / 60lvh 70lvh no-repeat;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.greet-text {
+
+    transform: translateX(-15vmax);
+
+    @media (width <= 1000px) {
+        transform: translateX(0);
+        justify-content: center;
+        align-items: center;
+        text-align: centerc;
+    }
+
+    &__title {
+        font-size: 5vmax;
+    }
+
+    &__text {
+        font-size: 1.2vmax;
+
+        @media (width <= 1000px) {
+            text-align: center;
+        }
+    }
+
+    &__btn {
+        padding: 2vmax;
+
+        @media (width <= 1000px) {
+            width: 100%;
+        }
+    }
+}

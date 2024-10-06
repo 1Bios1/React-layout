@@ -5,7 +5,15 @@
 @import url('./null.scss');
 
 #root {
+  background-color: #141024;
   min-height: 100vh;
+
+  display: grid;
+
+  grid-template-areas: 
+    'greetblk greetblk';
+
+  grid-template-rows: 100dvh;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,3 +21,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.greet-block {
+  grid-area: greetblk;
+}
