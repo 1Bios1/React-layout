@@ -73,14 +73,19 @@
     justify-content: center;
     align-items: center;
 
-    background: url('./student.svg') bottom right / 75lvh auto no-repeat;
+    background: url('./student.svg') 90% 100% / 75lvh auto no-repeat;
 
     @media (width <= 1400px) {
-        background: url('./student.svg') bottom right / 70lvh 70lvh no-repeat;
+        background: url('./student.svg') 95% 100% / 90lvh 75lvh no-repeat;
     }
 
+    @media (width <= 1100px) {
+        background: url('./student.svg') 100% 100% / 80lvh 70lvh no-repeat;
+    }
+
+
     @media (width <= 1000px) {
-        background: url('./student.svg') top center / 60lvh 70lvh no-repeat;
+        background: transparent;
         justify-content: center;
         align-items: center;
     }
@@ -88,14 +93,26 @@
 }
 
 .greet-text {
-
     transform: translateX(-15vmax);
+
 
     @media (width <= 1000px) {
         transform: translateX(0);
-        justify-content: center;
+        background: url('./student.svg') 50% 110% / 50lvh auto no-repeat;
+        height: 90%;
+        justify-content: space-between;
         align-items: center;
-        text-align: centerc;
+        text-align: center;
+    }
+
+    &__all-text {
+        display: flex;
+        flex-flow: column wrap;
+
+        @media (width <= 1000px) {
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     &__title {
@@ -103,18 +120,24 @@
     }
 
     &__text {
+        margin-bottom: 3rem;
+        margin-top: 3rem;
         font-size: 1.2vmax;
 
         @media (width <= 1000px) {
+            font-size: 2vmax;
             text-align: center;
+            margin: 0;
+
         }
     }
 
     &__btn {
         padding: 2vmax;
+        width: 50%;
 
         @media (width <= 1000px) {
-            width: 100%;
+            width: 90%;
         }
     }
 }

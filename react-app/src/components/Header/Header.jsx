@@ -36,12 +36,16 @@ function Header(props) {
             <div className="greet-block__content content flex  w-full h-full">
 
                 <div className="greet-block__greet-text greet-text flex flex-wrap flex-col">
-                    <div className="greet-text__title font-semibold text-white">
-                        ROBO SCHOOL
+
+                    <div className="greet-text__all-text">
+                        <div className="greet-text__title font-semibold text-white">
+                            ROBO SCHOOL
+                        </div>
+                        <div className="greet-text__text text-white w-2/3">
+                            Курсы повышения квалификации по робототехнике для педагогов начальной школы
+                        </div>
                     </div>
-                    <div className="greet-text__text text-white w-2/3 mb-12 mt-12">
-                        Курсы повышения квалификации по робототехнике для педагогов начальной школы
-                    </div>
+
                     <button className="greet-text__btn text-white bg-red-700 rounded-lg">Записаться на курс</button>
                 </div>
 
